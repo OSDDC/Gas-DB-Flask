@@ -16,9 +16,9 @@ def test():
 def links():
     return render_template("links.html")
 
-@app.route("/pictures.html")
-def pictures():
-    return render_template("pictures.html")
+@app.route("/picture.html")
+def picture():
+    return render_template("picture.html")
 
 @app.route("/impressum.html")
 def impressum():
