@@ -6,9 +6,21 @@
     <title>Daten-Graph</title>
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='Bilder/icon.ico') }}">
 </head>
+
 <body>
     <h1>Daten Graphen</h1>
+
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('test') }}">Daten</a>
+        <a href="{{ url_for('picture') }}">Bilder</a>
+        <a href="{{ url_for('impressum') }}">Impressum</a>
+        <a href="{{ url_for('links') }}">Links</a>
+        <div class="animation start-home"></div>
+    </nav>
 
     <canvas id="pollutantsChart" width="400" height="200"></canvas>
     <canvas id="gplLpgChart" width="400" height="200"></canvas>
