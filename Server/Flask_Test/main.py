@@ -11,6 +11,19 @@ def test():
         json_data = file.read()
     data = json.loads(json_data)
     return render_template("test.html", table_data=data) 
+
+@app.route("/links.html")
+def links():
+    return render_template("links.html")
+
+@app.route("/pictures.html")
+def pictures():
+    return render_template("pictures.html")
+
+@app.route("/impressum.html")
+def impressum():
+    return render_template("impressum.html")
+
 @app.route("/")
 def index():
     return render_template("index.html")
