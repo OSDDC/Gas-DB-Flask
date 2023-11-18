@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=Gas-db content="width=device-width, initial-scale=1.0">
+    <title>Gas-DB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='Bilder/icon.ico') }}">
+    <style>
+        /* CSS für das Dropdown-Menü */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dropdown-Menü -->
+    <div class="dropdown">
+        <button class="dropbtn">Menü</button>
+        <div class="dropdown-content">
+            <a href="https://www.reichelt.de/de/de/holybro-x500-v2-kit-drohnenbausatz-x500-kit-v2-p324607.html">Drohne kaufen</a>
+            <br></br>
+            <a href="{{ url_for('test') }}">Seite mit Daten</a>
+        </div>
+    </div>
+
+    <!-- Restlicher Seiteninhalt -->
+    <h1>Gas-DB</h1>
+    <h3>Übersicht</h3>
+    <h3>Idee:</h3>
+        Die Idee ist es, mit einer Drohne Umweltdaten zu sammeln und in eine öffentliche Datenbank einzuspeisen. Dort werden sie auch visualisiert.
+    <h3>Umsetzung:</h3>
+    <img alt="Diagram" src="{{ url_for('static', filename='Bilder/Diagram.png') }}">
+</body>
+</html>
