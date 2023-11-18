@@ -17,4 +17,4 @@ def index():
 
 if __name__ == "__main__":
     print("Website started")
-    app.run(debug=True, host='192.168.50.33', port=80)
+    app.run(debug=True)#, host='192.168.50.33', port=80)
