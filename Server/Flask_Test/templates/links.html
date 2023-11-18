@@ -11,11 +11,11 @@
     <h1>Gas-DB</h1>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="{{ url_for('index') }}">Home</a>
         <a href="{{ url_for('test') }}">Daten</a>
-        <a href="#">Bilder</a>
-        <a href="#">Impressum</a>
-        <a href="#">Links</a>
+        <a href="{{ url_for('picture') }}">Bilder</a>
+        <a href="{{ url_for('impressum') }}">Impressum</a>
+        <a href="{{ url_for('links') }}">Links</a>
         <div class="animation start-home"></div>
     </nav>
 
