@@ -1,5 +1,11 @@
 from flask import Flask
 from flask import render_template
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(("1.1.1.1", 80))
+host = s.getsockname()[0]
+s.close()
 
 app = Flask(__name__)
 
@@ -30,4 +36,6 @@ def index():
 
 if __name__ == "__main__":
     print("Website started")
-    app.run(debug=True)#, host='192.168.50.33', port=80)
+    print(host)
+    app.run(debug=True, host=host, port=404)
+
