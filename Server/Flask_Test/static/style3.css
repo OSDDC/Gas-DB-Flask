@@ -86,7 +86,11 @@ h1 {
 }
 
 p {
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: center;
+>>>>>>> 4e964aafae892a0b84d737ee58813765bbe80c29
     color: #ecf0f1;
     font-family: 'Cherry Swash',cursive;
     font-size: 16px;
