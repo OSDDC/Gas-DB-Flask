@@ -7,6 +7,8 @@ s.connect(("1.1.1.1", 80))
 host = s.getsockname()[0]
 s.close()
 
+port = 404
+
 app = Flask(__name__)
 
 @app.route("/test.html")
@@ -36,6 +38,6 @@ def index():
 
 if __name__ == "__main__":
     print("Website started")
-    print(host)
-    app.run(debug=True, host=host, port=404)
+    print(host, ":", port, sep='')
+    app.run(debug=True, host=host, port=port)
 
