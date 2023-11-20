@@ -38,6 +38,6 @@ def index():
 
 if __name__ == "__main__":
     print("Website started")
-    print(host, ":", port, sep='')
+    print("IP:",host, ":", port, sep='')
     app.run(debug=True, host=host, port=port)
 
