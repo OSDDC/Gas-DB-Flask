@@ -1,4 +1,56 @@
-# Gas-DB
+GAS-DB
+
+Simple overview of use/purpose.
 A drone that collects environmental data and feeds it into a publically accessible database.
 The data is visualized in four different graphs with the topics of car exhaust fumes, temperature/humidity, UV radiation and gas concentration. The site is hosted via Python-Flask and uses a JSON file as a database.
-This website with the corresponding web server was written during Jugendhackt 2023 by Marco, Jan, Yannik, Julian and Tobias.
+Description
+
+An in-depth paragraph about your project and overview of use.
+
+Getting Started
+
+Dependencies
+
+Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+ex. Windows 10
+Installing
+
+How/where to download your program
+Any modifications needed to be made to files/folders
+Executing program
+
+How to run the program
+Step-by-step bullets
+code blocks for commands
+Help
+
+Any advise for common problems or issues.
+
+command to run if program contains helper info
+Authors
+
+Contributors names and contact info
+
+ex. Dominique Pizzie
+ex. @DomPizzie
+
+Version History
+
+0.2
+Various bug fixes and optimizations
+See commit change or See release history
+0.1
+Initial Release
+License
+
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+Acknowledgments
+
+Inspiration, code snippets, etc.
+
+awesome-readme
+PurpleBooth
+dbader
+zenorocha
+fvcproductions
