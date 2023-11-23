@@ -38,9 +38,8 @@
 <h3 align="center">Gas-DB</h3>
 
   <p align="center">
-    Simple overview of use/purpose.
-A drone that collects environmental data and feeds it into a publically accessible database.
-The data is visualized in four different graphs with the topics of car exhaust fumes, temperature/humidity, UV radiation and gas concentration. The site is hosted via Python-Flask and uses a JSON file as a database.
+    A drone that collects environmental data and feeds it into a publically accessible database.
+    The data is visualized in four different graphs with the topics of car exhaust fumes, temperature/humidity, UV radiation and gas concentration. The site is hosted via Python-Flask and uses a JSON file as a database.
     <br />
     <a href="https://github.com/GAS-DB-Drone/Gas-DB"><strong>Explore the docs »</strong></a>
     <br />
@@ -88,7 +87,7 @@ The data is visualized in four different graphs with the topics of car exhaust f
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `GAS-DB-Drone`, `Gas-DB`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Gas-DB`, `Simple overview of use/purpose.
+
 A drone that collects environmental data and feeds it into a publically accessible database.
 The data is visualized in four different graphs with the topics of car exhaust fumes, temperature/humidity, UV radiation and gas concentration. The site is hosted via Python-Flask and uses a JSON file as a database.`
 
@@ -127,18 +126,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/GAS-DB-Drone/Gas-DB.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Edit your Port in `/Server/Flask/main.py`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   port = 'Your wanted Port'
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
