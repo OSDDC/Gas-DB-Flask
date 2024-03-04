@@ -53,7 +53,7 @@
                     }
                 ];
 
-                // Prepare data for the GPL and LPG chart
+                // Prepare data for the  and LPG chart
                 var LpgLabels = data.map(function (entry) {
                     return entry.date;
                 });
@@ -131,8 +131,8 @@
                     },
                 });
 
-                // Create GPL and LPG Chart
-                var LpgChart = new Chart(document.getElementById('gplLpgChart').getContext('2d'), {
+                // Create LPG Chart
+                var LpgChart = new Chart(document.getElementById('LpgChart').getContext('2d'), {
                     type: 'line',
                     data: {
                         labels: LpgLabels,
