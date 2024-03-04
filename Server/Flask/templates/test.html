@@ -25,7 +25,7 @@
         <h1>Auto Abgase</h1>
         <canvas id="pollutantsChart" width="400" height="200"></canvas>
         <h1>Gas Konzentration</h1>
-        <canvas id="gplLpgChart" width="400" height="200"></canvas>
+        <canvas id="LpgChart" width="400" height="200"></canvas>
         <h1>Luftfeuchtigkeit/Temperatur</h1>
         <canvas id="tempPercentageChart" width="400" height="200"></canvas>
         <h1>UV-Strahlung</h1>
@@ -117,20 +117,11 @@
                 ];
 
                 // Prepare data for the GPL and LPG chart
-                var gplLpgLabels = data.map(function (entry) {
+                var LpgLabels = data.map(function (entry) {
                     return entry.date;
                 });
 
-                var gplLpgValues = [
-                    {
-                        label: 'GPL',
-                        data: data.map(function (entry) {
-                            return entry.GPL;
-                        }),
-                        fill: false,
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1
-                    },
+                var LpgValues = [
                     {
                         label: 'LPG',
                         data: data.map(function (entry) {
@@ -207,8 +198,8 @@
                 var gplLpgChart = new Chart(document.getElementById('gplLpgChart').getContext('2d'), {
                     type: 'line',
                     data: {
-                        labels: gplLpgLabels,
-                        datasets: gplLpgValues
+                        labels: LpgLabels,
+                        datasets: LpgValues
                     },
                 });
 
