@@ -50,69 +50,6 @@
                         fill: false,
                         borderColor: getRandomColor(),
                         borderWidth: 1
-                    },
-                    {
-                        label: 'NO2',
-                        data: data.map(function (entry) {
-                            return entry.NO2;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'C2H5OH',
-                        data: data.map(function (entry) {
-                            return entry.C2H5OH;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'H2',
-                        data: data.map(function (entry) {
-                            return entry.H2;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'NH3',
-                        data: data.map(function (entry) {
-                            return entry.NH3;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'CH4',
-                        data: data.map(function (entry) {
-                            return entry.CH4;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'C3H8',
-                        data: data.map(function (entry) {
-                            return entry.C3H8;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'C4H10',
-                        data: data.map(function (entry) {
-                            return entry.C4H10;
-                        }),
-                        fill: false,
-                        borderColor: getRandomColor(),
-                        borderWidth: 1
                     }
                 ];
 
@@ -195,7 +132,7 @@
                 });
 
                 // Create GPL and LPG Chart
-                var gplLpgChart = new Chart(document.getElementById('gplLpgChart').getContext('2d'), {
+                var LpgChart = new Chart(document.getElementById('gplLpgChart').getContext('2d'), {
                     type: 'line',
                     data: {
                         labels: LpgLabels,
