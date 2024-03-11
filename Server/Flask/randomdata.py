@@ -24,7 +24,7 @@ def generate_dummy_data(num_entries):
     return data
 
 # Anzahl der Dummy-Einträge
-num_entries = 30
+num_entries = 50
 
 # Dummy-Daten generieren
 dummy_data = generate_dummy_data(num_entries)
