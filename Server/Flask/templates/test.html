@@ -34,7 +34,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 // Extract data from Flask template variable
-                var data = {{ table_data | tojson | safe }};
+                var data = {{ table_data , tojson , safe }};
 
                 // Prepare data for the pollutants chart
                 var pollutantsLabels = data.map(function (entry) {
