@@ -25,7 +25,7 @@
         <h1>Auto Abgase</h1>
         <canvas id="pollutantsChart" width="400" height="200"></canvas>
         <h1>Gas Konzentration</h1>
-        <canvas id="LpgChart" width="400" height="200"></canvas>
+        <canvas id="gplLpgChart" width="400" height="200"></canvas>
         <h1>Luftfeuchtigkeit/Temperatur</h1>
         <canvas id="tempPercentageChart" width="400" height="200"></canvas>
         <h1>UV-Strahlung</h1>
@@ -34,7 +34,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 // Extract data from Flask template variable
-                var data = {{ table_data , tojson , safe }};
+                var data = {{ table_data | tojson | safe }};
 
                 // Prepare data for the pollutants chart
                 var pollutantsLabels = data.map(function (entry) {
@@ -50,15 +50,87 @@
                         fill: false,
                         borderColor: getRandomColor(),
                         borderWidth: 1
+                    },
+                    {
+                        label: 'NO2',
+                        data: data.map(function (entry) {
+                            return entry.NO2;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'C2H5OH',
+                        data: data.map(function (entry) {
+                            return entry.C2H5OH;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'H2',
+                        data: data.map(function (entry) {
+                            return entry.H2;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'NH3',
+                        data: data.map(function (entry) {
+                            return entry.NH3;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'CH4',
+                        data: data.map(function (entry) {
+                            return entry.CH4;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'C3H8',
+                        data: data.map(function (entry) {
+                            return entry.C3H8;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'C4H10',
+                        data: data.map(function (entry) {
+                            return entry.C4H10;
+                        }),
+                        fill: false,
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
                     }
                 ];
 
-                // Prepare data for the  and LPG chart
-                var LpgLabels = data.map(function (entry) {
+                // Prepare data for the GPL and LPG chart
+                var gplLpgLabels = data.map(function (entry) {
                     return entry.date;
                 });
 
-                var LpgValues = [
+                var gplLpgValues = [
+                    {
+                        label: 'GPL',
+                        data: data.map(function (entry) {
+                            return entry.GPL;
+                        }),
+                        fill: false,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    },
                     {
                         label: 'LPG',
                         data: data.map(function (entry) {
@@ -131,12 +203,12 @@
                     },
                 });
 
-                // Create LPG Chart
-                var LpgChart = new Chart(document.getElementById('LpgChart').getContext('2d'), {
+                // Create GPL and LPG Chart
+                var gplLpgChart = new Chart(document.getElementById('gplLpgChart').getContext('2d'), {
                     type: 'line',
                     data: {
-                        labels: LpgLabels,
-                        datasets: LpgValues
+                        labels: gplLpgLabels,
+                        datasets: gplLpgValues
                     },
                 });
 
