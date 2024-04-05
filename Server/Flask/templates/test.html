@@ -28,16 +28,6 @@
     <canvas id="tempPercentageChart" width="400" height="200"></canvas>
     <canvas id="uvaUvbChart" width="400" height="200"></canvas>
 
-<<<<<<< HEAD
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Extract data from Flask template variable
-            var data = {{ table_data | tojson | safe }};
-
-            // Prepare data for the pollutants chart
-            var pollutantsLabels = data.map(function (entry) {
-                return entry.date;
-=======
         <h1>Auto Abgase</h1>
         <canvas id="pollutantsChart" width="400" height="200"></canvas>
         <h1>Gas Konzentration</h1>
@@ -246,7 +236,6 @@
                     }
                     return color;
                 }
->>>>>>> b7ae7770ca1843cda6238b231cd83e8071a1cab1
             });
 
             var pollutantsValues = [
