@@ -1,0 +1,302 @@
+[
+  {
+    "date": "22.01.2021",
+    "ort": "Ludwigshafen",
+    "CO": 5,
+    "LPG": 8,
+    "UVA": 7,
+    "UVB": 10,
+    "%": 47,
+    "TEMP": 31
+  },
+  {
+    "date": "23.01.2021",
+    "ort": "Heidelberg",
+    "CO": 6,
+    "LPG": 5,
+    "UVA": 4,
+    "UVB": 8,
+    "%": 61,
+    "TEMP": 32
+  },
+  {
+    "date": "24.01.2021",
+    "ort": "Neustadt",
+    "CO": 5,
+    "LPG": 2,
+    "UVA": 7,
+    "UVB": 8,
+    "%": 74,
+    "TEMP": 32
+  },
+  {
+    "date": "25.01.2021",
+    "ort": "Mannheim",
+    "CO": 4,
+    "LPG": 3,
+    "UVA": 7,
+    "UVB": 6,
+    "%": 68,
+    "TEMP": 25
+  },
+  {
+    "date": "26.01.2021",
+    "ort": "Neustadt",
+    "CO": 2,
+    "LPG": 1,
+    "UVA": 10,
+    "UVB": 6,
+    "%": 36,
+    "TEMP": 31
+  },
+  {
+    "date": "27.01.2021",
+    "ort": "Weinheim",
+    "CO": 5,
+    "LPG": 2,
+    "UVA": 10,
+    "UVB": 5,
+    "%": 58,
+    "TEMP": 26
+  },
+  {
+    "date": "28.01.2021",
+    "ort": "Heidelberg",
+    "CO": 6,
+    "LPG": 8,
+    "UVA": 10,
+    "UVB": 7,
+    "%": 41,
+    "TEMP": 25
+  },
+  {
+    "date": "29.01.2021",
+    "ort": "Weinheim",
+    "CO": 3,
+    "LPG": 3,
+    "UVA": 2,
+    "UVB": 10,
+    "%": 44,
+    "TEMP": 31
+  },
+  {
+    "date": "30.01.2021",
+    "ort": "Neustadt",
+    "CO": 4,
+    "LPG": 8,
+    "UVA": 6,
+    "UVB": 6,
+    "%": 21,
+    "TEMP": 25
+  },
+  {
+    "date": "31.01.2021",
+    "ort": "Heidelberg",
+    "CO": 5,
+    "LPG": 7,
+    "UVA": 10,
+    "UVB": 2,
+    "%": 59,
+    "TEMP": 27
+  },
+  {
+    "date": "01.02.2021",
+    "ort": "Mannheim",
+    "CO": 1,
+    "LPG": 2,
+    "UVA": 5,
+    "UVB": 10,
+    "%": 28,
+    "TEMP": 28
+  },
+  {
+    "date": "02.02.2021",
+    "ort": "Weinheim",
+    "CO": 2,
+    "LPG": 8,
+    "UVA": 3,
+    "UVB": 1,
+    "%": 40,
+    "TEMP": 29
+  },
+  {
+    "date": "03.02.2021",
+    "ort": "Ludwigshafen",
+    "CO": 3,
+    "LPG": 2,
+    "UVA": 2,
+    "UVB": 5,
+    "%": 37,
+    "TEMP": 26
+  },
+  {
+    "date": "04.02.2021",
+    "ort": "Neustadt",
+    "CO": 4,
+    "LPG": 5,
+    "UVA": 3,
+    "UVB": 7,
+    "%": 97,
+    "TEMP": 31
+  },
+  {
+    "date": "05.02.2021",
+    "ort": "Heidelberg",
+    "CO": 2,
+    "LPG": 8,
+    "UVA": 2,
+    "UVB": 3,
+    "%": 72,
+    "TEMP": 26
+  },
+  {
+    "date": "06.02.2021",
+    "ort": "Ludwigshafen",
+    "CO": 1,
+    "LPG": 8,
+    "UVA": 5,
+    "UVB": 6,
+    "%": 98,
+    "TEMP": 27
+  },
+  {
+    "date": "07.02.2021",
+    "ort": "Weinheim",
+    "CO": 2,
+    "LPG": 8,
+    "UVA": 8,
+    "UVB": 9,
+    "%": 35,
+    "TEMP": 32
+  },
+  {
+    "date": "08.02.2021",
+    "ort": "Heidelberg",
+    "CO": 2,
+    "LPG": 8,
+    "UVA": 2,
+    "UVB": 3,
+    "%": 79,
+    "TEMP": 29
+  },
+  {
+    "date": "09.02.2021",
+    "ort": "Mannheim",
+    "CO": 3,
+    "LPG": 1,
+    "UVA": 2,
+    "UVB": 7,
+    "%": 59,
+    "TEMP": 27
+  },
+  {
+    "date": "10.02.2021",
+    "ort": "Mannheim",
+    "CO": 6,
+    "LPG": 8,
+    "UVA": 8,
+    "UVB": 10,
+    "%": 98,
+    "TEMP": 30
+  },
+  {
+    "date": "11.02.2021",
+    "ort": "Ludwigshafen",
+    "CO": 3,
+    "LPG": 2,
+    "UVA": 8,
+    "UVB": 7,
+    "%": 100,
+    "TEMP": 30
+  },
+  {
+    "date": "12.02.2021",
+    "ort": "Neustadt",
+    "CO": 6,
+    "LPG": 3,
+    "UVA": 5,
+    "UVB": 8,
+    "%": 61,
+    "TEMP": 32
+  },
+  {
+    "date": "13.02.2021",
+    "ort": "Weinheim",
+    "CO": 2,
+    "LPG": 5,
+    "UVA": 4,
+    "UVB": 2,
+    "%": 14,
+    "TEMP": 30
+  },
+  {
+    "date": "14.02.2021",
+    "ort": "Mannheim",
+    "CO": 2,
+    "LPG": 2,
+    "UVA": 3,
+    "UVB": 2,
+    "%": 11,
+    "TEMP": 32
+  },
+  {
+    "date": "15.02.2021",
+    "ort": "Neustadt",
+    "CO": 2,
+    "LPG": 3,
+    "UVA": 8,
+    "UVB": 2,
+    "%": 47,
+    "TEMP": 31
+  },
+  {
+    "date": "16.02.2021",
+    "ort": "Ludwigshafen",
+    "CO": 2,
+    "LPG": 1,
+    "UVA": 9,
+    "UVB": 6,
+    "%": 21,
+    "TEMP": 30
+  },
+  {
+    "date": "17.02.2021",
+    "ort": "Neustadt",
+    "CO": 5,
+    "LPG": 7,
+    "UVA": 10,
+    "UVB": 8,
+    "%": 12,
+    "TEMP": 31
+  },
+  {
+    "date": "18.02.2021",
+    "ort": "Mannheim",
+    "CO": 5,
+    "LPG": 3,
+    "UVA": 2,
+    "UVB": 5,
+    "%": 14,
+    "TEMP": 26
+  },
+  {
+    "date": "19.02.2021",
+    "ort": "Neustadt",
+    "CO": 1,
+    "LPG": 7,
+    "UVA": 8,
+    "UVB": 3,
+    "%": 85,
+    "TEMP": 31
+  },
+  {
+    "date": "20.02.2021",
+    "ort": "Neustadt",
+    "CO": 1,
+    "LPG": 5,
+    "UVA": 6,
+    "UVB": 5,
+    "%": 52,
+    "TEMP": 28
+  }
+]
