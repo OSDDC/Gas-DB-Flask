@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 # Funktion zur Generierung von Dummy-Daten
 def generate_dummy_data(num_entries):
     data = []
-    start_date = datetime(2021, 1, 22)
+    start_date = datetime(2024, 1, 1)
 
     for i in range(num_entries):
         date = (start_date + timedelta(days=i)).strftime("%d.%m.%Y")
@@ -17,7 +17,7 @@ def generate_dummy_data(num_entries):
             "UVA": random.randint(1, 10),
             "UVB": random.randint(1, 10),
             "%": random.randint(10, 100),
-            "TEMP": random.randint(25, 32),
+            "TEMP": random.randint(5, 20),
         }
         data.append(entry)
 
