@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask # if flask not install use cmd and use pip install flask
 from flask import render_template
 import socket
 
