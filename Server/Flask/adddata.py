@@ -1,18 +1,18 @@
 import json
 
-try:
-    with open('drone.json', 'r') as input:
-        data_drone = json.load(input)
-except FileNotFoundError:
-    print("Die Datei 'data.json' wurde nicht gefunden. Bitte erstelle sie zuerst.")
+# Dateinamen
+input_filename = 'drone.json'
+output_filename = 'data.json'
 
-data = []
-data.append(data_drone)
+# Inhalte aus drone.json lesen
+with open(input_filename, 'r', encoding='utf-8') as infile:
+    drone_data = json.load(infile)
 
+# Inhalte in eine Liste packen
+data_to_write = [drone_data]
 
+# Inhalte in data.json schreiben
+with open(output_filename, 'w', encoding='utf-8') as outfile:
+    json.dump(data_to_write, outfile, ensure_ascii=False, indent=4)
 
-# Schreibe die aktualisierten Daten zurück in die data.json-Datei
-with open('data.json', 'w') as output:
-    json.dump(data, output, indent=2)
-
-print(f"Die Daten wurden erfolgreich zur 'data.json' hinzugefügt:\n{new_entry}")
+print(f"Die Daten aus {input_filename} wurden erfolgreich in {output_filename} geschrieben.")
