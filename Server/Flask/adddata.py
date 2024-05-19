@@ -1,27 +1,18 @@
 import json
 
-def main():
-    # Lese die vorhandene data.json-Datei ein
-    try:
-        with open('data.json', 'r') as json_file:
-            existing_data = json.load(json_file)
-    except FileNotFoundError:
-        print("Die Datei 'data.json' wurde nicht gefunden. Bitte erstelle sie zuerst.")
-        return
+try:
+    with open('drone.json', 'r') as input:
+        data_drone = json.load(input)
+except FileNotFoundError:
+    print("Die Datei 'data.json' wurde nicht gefunden. Bitte erstelle sie zuerst.")
 
-    # Benutzereingabe für neue Daten
-    data = input("Add new data: ")
+data = []
+data.append(data_drone)
 
 
-    # Füge die neuen Daten zur vorhandenen Liste hinzu
-    new_entry = {data}
-    existing_data.append(new_entry)
 
-    # Schreibe die aktualisierten Daten zurück in die data.json-Datei
-    with open('data.json', 'w') as json_file:
-        json.dump(existing_data, json_file, indent=4)
+# Schreibe die aktualisierten Daten zurück in die data.json-Datei
+with open('data.json', 'w') as output:
+    json.dump(data, output, indent=2)
 
-    print(f"Die Daten wurden erfolgreich zur 'data.json' hinzugefügt:\n{new_entry}")
-
-if __name__ == "__main__":
-    main()
+print(f"Die Daten wurden erfolgreich zur 'data.json' hinzugefügt:\n{new_entry}")
