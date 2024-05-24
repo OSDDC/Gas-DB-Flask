@@ -4,7 +4,7 @@ This project provides a simple web application to visualize sensor data stored i
 
 ## Installation
 
-### 1. MySQL Server Installation
+## 1. MySQL Server Installation
 
 #### Linux (Ubuntu):
 sudo apt update
@@ -21,7 +21,7 @@ brew install mysql
 brew services start mysql
 
 
-### 2. Create MySQL Database and Table
+## 2. Create MySQL Database and Table
 
 1. Log in to MySQL:
 mysql -u root -p
@@ -44,7 +44,7 @@ Hum FLOAT,
 Datum DATETIME
 );
 
-### 3. Install Node.js and npm
+## 3. Install Node.js and npm
 
 #### Linux/MacOS:
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -54,7 +54,7 @@ sudo apt-get install -y nodejs
 #### Windows:
 - Download and install Node.js from [official website](https://nodejs.org/en/download/).
 
-### 4. Project Setup
+## 4. Project Setup
 
 1. Create a new directory for your project and navigate into it:
 mkdir sensor_data_project
@@ -72,7 +72,7 @@ npm install express mysql2 cors body-parser
 markdown
 Code kopieren
 
-### 5. Backend Setup
+## 5. Backend Setup
 
 1. Create a file named `server.js` in the project directory:
 touch server.js
@@ -80,7 +80,7 @@ touch server.js
 2. Copy and paste the following code into `server.js`.
    - See the provided text document for the code.
 
-### 6. Frontend Setup
+## 6. Frontend Setup
 
 1. Create a file named `index.html` in the project directory:
 touch index.html
@@ -88,7 +88,7 @@ touch index.html
 2. Copy and paste the following code into `index.html`.
    - See the provided text document for the code.
 
-### 7. Start the Server
+## 7. Start the Server
 
 1. Start the Node.js server:
 node server.js
