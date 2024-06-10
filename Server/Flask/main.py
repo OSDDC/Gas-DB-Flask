@@ -12,7 +12,7 @@ port = 404
 app = Flask(__name__)
 
 @app.route("/data.html")
-def test():
+def data():
     import json
     json_file_path = 'data.json'
     with open(json_file_path, 'r') as file:
