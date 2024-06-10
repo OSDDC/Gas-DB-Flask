@@ -45,7 +45,7 @@
                     {
                         label: 'CO',
                         data: data.map(function (entry) {
-                            return entry.CO;
+                            return entry.CO;    //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: getRandomColor(),
@@ -62,7 +62,7 @@
                     {
                         label: 'LPG',
                         data: data.map(function (entry) {
-                            return entry.LPG;
+                            return entry.LPG;   //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: 'rgba(255, 99, 132, 1)',
@@ -79,7 +79,7 @@
                     {
                         label: 'TEMP',
                         data: data.map(function (entry) {
-                            return entry.TEMP;
+                            return entry.TEMP;  //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: getRandomColor(),
@@ -88,7 +88,7 @@
                     {
                         label: '%',
                         data: data.map(function (entry) {
-                            return entry['%'];
+                            return entry.Hum;   //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: getRandomColor(),
@@ -105,7 +105,7 @@
                     {
                         label: 'UVA',
                         data: data.map(function (entry) {
-                            return entry.UVA;
+                            return entry.UVA;   //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: 'rgba(255, 165, 0, 1)',
@@ -114,7 +114,7 @@
                     {
                         label: 'UVB',
                         data: data.map(function (entry) {
-                            return entry.UVB;
+                            return entry.UVB;   //Value in data.json to use
                         }),
                         fill: false,
                         borderColor: 'rgba(255, 255, 0, 1)',
